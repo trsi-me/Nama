@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الندوات - نماء</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23006C35' width='100' height='100' rx='10'/%3E%3Cpath fill='%23C9A961' d='M30 70 Q35 50, 40 65 T50 60 T60 65 T70 70 M35 40 L40 50 L50 35 L60 50 L65 40'/%3E%3Ctext x='50' y='88' text-anchor='middle' font-size='16' fill='%23C9A961' font-weight='bold'%3Eنماء%3C/text%3E%3C/svg%3E" alt="شعار نماء" class="logo-image">
+                    <div class="logo-text">
+                        <h1>نماء</h1>
+                        <p>منصة العلوم الشرعية والتطوير المعرفي</p>
+                    </div>
+                </div>
+
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="lectures.html">المحاضرات</a></li>
+                        <li><a href="seminars.html" class="active">الندوات</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i ></i> الندوات التعليمية</h1>
+            <p>ندوات حوارية تفاعلية مع نخبة من العلماء والمتخصصين</p>
+            <div class="breadcrumb">
+                <a href="index.html">الرئيسية</a> / الندوات
+            </div>
+        </div>
+    </section>
+
+    <!-- SEMINARS GRID -->
+    <section class="content-section">
+        <div class="container">
+            <div class="lectures-grid">
+                
+                <!-- ندوة 1 -->
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-badge seminar">ندوة</span>
+                        <span class="lecture-date"><i class="fas fa-calendar"></i> 15 ديسمبر</span>
+                    </div>
+                    <h3>الأسرة في ظل التربية الإسلامية</h3>
+                    <div class="lecture-info">
+                        <div class="lecture-info-item">
+                            <i class="fas fa-users"></i>
+                            <span>د. أحمد السالم وآخرون</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>مركز المؤتمرات - الرياض</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>4:00 مساءً - 7:00 مساءً</span>
+                        </div>
+                    </div>
+                    <p class="lecture-description">ندوة شاملة عن دور الأسرة في التربية الإسلامية وكيفية بناء أسرة متماسكة</p>
+                    <button class="btn-register" onclick="openModal('ندوة الأسرة في ظل التربية الإسلامية', '15 ديسمبر 2024')">
+                        <i class="fas fa-user-plus"></i> سجل الآن
+                    </button>
+                </div>
+
+                <!-- ندوة 2 -->
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-badge seminar">ندوة</span>
+                        <span class="lecture-date"><i class="fas fa-calendar"></i> 20 ديسمبر</span>
+                    </div>
+                    <h3>الشباب والتحديات المعاصرة</h3>
+                    <div class="lecture-info">
+                        <div class="lecture-info-item">
+                            <i class="fas fa-users"></i>
+                            <span>د. محمد الغامدي وآخرون</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>قاعة الملك فيصل - الرياض</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>5:00 مساءً - 8:00 مساءً</span>
+                        </div>
+                    </div>
+                    <p class="lecture-description">مناقشة التحديات التي يواجهها الشباب المسلم وكيفية مواجهتها</p>
+                    <button class="btn-register" onclick="openModal('ندوة الشباب والتحديات المعاصرة', '20 ديسمبر 2024')">
+                        <i class="fas fa-user-plus"></i> سجل الآن
+                    </button>
+                </div>
+
+                <!-- ندوة 3 -->
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-badge seminar">ندوة</span>
+                        <span class="lecture-date"><i class="fas fa-calendar"></i> 28 ديسمبر</span>
+                    </div>
+                    <h3>الاقتصاد الإسلامي والتحديات المعاصرة</h3>
+                    <div class="lecture-info">
+                        <div class="lecture-info-item">
+                            <i class="fas fa-users"></i>
+                            <span>د. عبدالله المنيع وآخرون</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>فندق الريتز - الرياض</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3:00 مساءً - 6:00 مساءً</span>
+                        </div>
+                    </div>
+                    <p class="lecture-description">استعراض مبادئ الاقتصاد الإسلامي ودوره في معالجة المشكلات الاقتصادية</p>
+                    <button class="btn-register" onclick="openModal('ندوة الاقتصاد الإسلامي والتحديات المعاصرة', '28 ديسمبر 2024')">
+                        <i class="fas fa-user-plus"></i> سجل الآن
+                    </button>
+                </div>
+
+                <!-- ندوة 4 -->
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-badge seminar">ندوة</span>
+                        <span class="lecture-date"><i class="fas fa-calendar"></i> 05 يناير</span>
+                    </div>
+                    <h3>المرأة ودورها في المجتمع</h3>
+                    <div class="lecture-info">
+                        <div class="lecture-info-item">
+                            <i class="fas fa-users"></i>
+                            <span>د. فاطمة الزهراني وآخرون</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>مركز الأميرة نورة - الرياض</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>4:30 مساءً - 7:30 مساءً</span>
+                        </div>
+                    </div>
+                    <p class="lecture-description">مناقشة دور المرأة في بناء المجتمع من منظور إسلامي</p>
+                    <button class="btn-register" onclick="openModal('ندوة المرأة ودورها في المجتمع', '05 يناير 2025')">
+                        <i class="fas fa-user-plus"></i> سجل الآن
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <div class="newsletter-text">
+                        <h2>اشترك في النشرة البريدية</h2>
+                        <p>احصل على آخر الأخبار والفعاليات مباشرة في بريدك</p>
+                    </div>
+                </div>
+                <form class="newsletter-form" onsubmit="return subscribeNewsletter(event)">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> اشترك الآن
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>عن نماء</h3>
+                    <p>منصة إسلامية متخصصة في نشر العلوم الشرعية والمعرفة الإسلامية الأصيلة من خلال المحاضرات والندوات والدورات التعليمية</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+                        <li><a href="lectures.html"><i class="fas fa-angle-left"></i> المحاضرات</a></li>
+                        <li><a href="seminars.html"><i class="fas fa-angle-left"></i> الندوات</a></li>
+                        <li><a href="courses.html"><i class="fas fa-angle-left"></i> الدورات</a></li>
+                        <li><a href="about.html"><i class="fas fa-angle-left"></i> من نحن</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="footer-col">
+                    <h3>تواصل معنا</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                        <li><i class="fas fa-phone"></i> +966 11 123 4567</li>
+                        <li><a href="mailto:info@nemaa.sa"><i class="fas fa-envelope"></i> info@nemaa.sa</a></li>
+                        <li><i class="fas fa-clock"></i> الأحد - الخميس: 8 ص - 4 م</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 نماء - منصة العلوم الشرعية. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- نافذة التسجيل المنبثقة -->
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2><i class="fas fa-clipboard-check"></i> التسجيل في الندوة</h2>
+            <p id="event-name-display" class="event-name"></p>
+            <form id="registration-form" onsubmit="return submitRegistration(event)">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> الاسم الكامل *</label>
+                    <input type="text" id="reg-name" required placeholder="أدخل اسمك الكامل">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> البريد الإلكتروني *</label>
+                    <input type="email" id="reg-email" required placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-phone"></i> رقم الجوال *</label>
+                    <input type="tel" id="reg-phone" required placeholder="05xxxxxxxx">
+                </div>
+                <input type="hidden" id="event-title" value="">
+                <input type="hidden" id="event-date" value="">
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-check"></i> تأكيد التسجيل
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">
+                        <i class="fas fa-times"></i> إلغاء
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

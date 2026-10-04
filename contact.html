@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - نماء</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23006C35' width='100' height='100' rx='10'/%3E%3Cpath fill='%23C9A961' d='M30 70 Q35 50, 40 65 T50 60 T60 65 T70 70 M35 40 L40 50 L50 35 L60 50 L65 40'/%3E%3Ctext x='50' y='88' text-anchor='middle' font-size='16' fill='%23C9A961' font-weight='bold'%3Eنماء%3C/text%3E%3C/svg%3E" alt="شعار نماء" class="logo-image">
+                    <div class="logo-text">
+                        <h1>نماء</h1>
+                        <p>منصة العلوم الشرعية والتطوير المعرفي</p>
+                    </div>
+                </div>
+
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="lectures.html">المحاضرات</a></li>
+                        <li><a href="seminars.html">الندوات</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i></i> اتصل بنا</h1>
+            <p>نسعد بتواصلك معنا في أي وقت</p>
+            <div class="breadcrumb">
+                <a href="index.html">الرئيسية</a> / اتصل بنا
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT BOXES -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-boxes">
+                <div class="contact-box">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>العنوان</h3>
+                    <p>الرياض</p>
+                    <p>المملكة العربية السعودية</p>
+                </div>
+                
+                <div class="contact-box">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>الهاتف</h3>
+                    <p dir="ltr">+966 11 123 4567</p>
+                    <p dir="ltr">+966 50 123 4567</p>
+                </div>
+                
+                <div class="contact-box">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>info@nemaa.sa</p>
+                    <p>support@nemaa.sa</p>
+                </div>
+                
+                <div class="contact-box">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>ساعات العمل</h3>
+                    <p>الأحد - الخميس</p>
+                    <p>8:00 ص - 4:00 م</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & INFO -->
+    <section class="content-section" style="background: var(--light);">
+        <div class="container">
+            <div class="contact-content">
+                
+                <!-- نموذج التواصل -->
+                <div class="contact-form-section">
+                    <h2><i class="fas fa-paper-plane"></i> أرسل لنا رسالة</h2>
+                    <p>املأ النموذج التالي وسنتواصل معك في أقرب وقت</p>
+                    
+                    <form class="contact-form" onsubmit="return sendContactMessage(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-user"></i> الاسم الكامل *</label>
+                                <input type="text" id="contact-name" required placeholder="أدخل اسمك الكامل">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-envelope"></i> البريد الإلكتروني *</label>
+                                <input type="email" id="contact-email" required placeholder="example@email.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-phone"></i> رقم الجوال *</label>
+                                <input type="tel" id="contact-phone" required placeholder="05xxxxxxxx">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-tag"></i> الموضوع *</label>
+                                <select id="contact-subject" required>
+                                    <option value="">اختر الموضوع</option>
+                                    <option value="استفسار عام">استفسار عام</option>
+                                    <option value="التسجيل في دورة">التسجيل في دورة</option>
+                                    <option value="استفسار فني">استفسار فني</option>
+                                    <option value="اقتراح">اقتراح</option>
+                                    <option value="شكوى">شكوى</option>
+                                    <option value="أخرى">أخرى</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-comment-alt"></i> الرسالة *</label>
+                            <textarea id="contact-message" rows="6" required placeholder="اكتب رسالتك هنا..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">
+                            <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+
+                <!-- معلومات التواصل -->
+                <div class="contact-info-section">
+                    <h2><i class="fas fa-info-circle"></i> معلومات إضافية</h2>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-marked-alt"></i> مقرنا</h3>
+                        <p>تقع منصة نماء في قلب العاصمة الرياض، ونستقبل الزوار والمهتمين بالعلم الشرعي في مقرنا الرئيسي.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-question-circle"></i> الأسئلة الشائعة</h3>
+                        <p>قبل إرسال استفسارك، يمكنك زيارة قسم الأسئلة الشائعة للحصول على إجابات سريعة لأكثر الأسئلة تكراراً.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-headset"></i> الدعم الفني</h3>
+                        <p>فريق الدعم الفني متاح للإجابة على استفساراتكم التقنية من الأحد إلى الخميس خلال ساعات العمل الرسمية.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="content-section" style="background: var(--light);">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-question-circle"></i> الأسئلة الشائعة</h2>
+                <p>إجابات على أكثر الأسئلة تكراراً</p>
+            </div>
+            
+            <div class="faq-container">
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>كيف يمكنني التسجيل في الدورات؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكنك التسجيل في أي دورة من خلال زيارة صفحة الدورات واختيار الدورة المناسبة، ثم الضغط على زر "سجل الآن" وملء نموذج التسجيل. سيتم التواصل معك عبر البريد الإلكتروني أو الهاتف لتأكيد التسجيل.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>هل الدورات مجانية؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>معظم دوراتنا مجانية تماماً بفضل الله، ضمن رسالتنا في نشر العلم الشرعي. بعض الدورات المتخصصة قد تتطلب رسوم رمزية لتغطية تكاليف المواد التعليمية والشهادات.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>هل يمكنني حضور المحاضرات عن بُعد؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نوفر إمكانية حضور بعض المحاضرات والندوات عن بُعد من خلال منصات البث المباشر. يتم الإعلان عن ذلك مع كل فعالية على حدة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>هل تصدرون شهادات معتمدة؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نصدر شهادات حضور معتمدة من المنصة لكل من يكمل الدورة بنجاح ويجتاز الاختبارات المطلوبة. الشهادات تحمل ختم المنصة وتوقيع المشرف على الدورة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>كيف يمكنني إلغاء تسجيلي؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكنك إلغاء تسجيلك من خلال التواصل معنا عبر البريد الإلكتروني أو الهاتف قبل موعد بدء الدورة بـ 48 ساعة على الأقل. سنقوم بمعالجة طلبك في أقرب وقت.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>هل يمكنني اقتراح موضوع لمحاضرة أو دورة؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بالتأكيد! نرحب باقتراحاتكم وأفكاركم. يمكنك إرسال اقتراحك من خلال نموذج التواصل في هذه الصفحة، واختر "اقتراح" كموضوع الرسالة. سندرس كل الاقتراحات بعناية.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <div class="newsletter-text">
+                        <h2>اشترك في النشرة البريدية</h2>
+                        <p>احصل على آخر الأخبار والفعاليات مباشرة في بريدك</p>
+                    </div>
+                </div>
+                <form class="newsletter-form" onsubmit="return subscribeNewsletter(event)">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> اشترك الآن
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>عن نماء</h3>
+                    <p>منصة إسلامية متخصصة في نشر العلوم الشرعية والمعرفة الإسلامية الأصيلة من خلال المحاضرات والندوات والدورات التعليمية</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+                        <li><a href="lectures.html"><i class="fas fa-angle-left"></i> المحاضرات</a></li>
+                        <li><a href="seminars.html"><i class="fas fa-angle-left"></i> الندوات</a></li>
+                        <li><a href="courses.html"><i class="fas fa-angle-left"></i> الدورات</a></li>
+                        <li><a href="about.html"><i class="fas fa-angle-left"></i> من نحن</a></li>
+                    </ul>
+                </div>
+
+               
+
+                <div class="footer-col">
+                    <h3>تواصل معنا</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                        <li><i class="fas fa-phone"></i> +966 11 123 4567</li>
+                        <li><a href="mailto:info@nemaa.sa"><i class="fas fa-envelope"></i> info@nemaa.sa</a></li>
+                        <li><i class="fas fa-clock"></i> الأحد - الخميس: 8 ص - 4 م</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 نماء - منصة العلوم الشرعية. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

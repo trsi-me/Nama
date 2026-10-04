@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - نماء</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23006C35' width='100' height='100' rx='10'/%3E%3Cpath fill='%23C9A961' d='M30 70 Q35 50, 40 65 T50 60 T60 65 T70 70 M35 40 L40 50 L50 35 L60 50 L65 40'/%3E%3Ctext x='50' y='88' text-anchor='middle' font-size='16' fill='%23C9A961' font-weight='bold'%3Eنماء%3C/text%3E%3C/svg%3E" alt="شعار نماء" class="logo-image">
+                    <div class="logo-text">
+                        <h1>نماء</h1>
+                        <p>منصة العلوم الشرعية والتطوير المعرفي</p>
+                    </div>
+                </div>
+
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="index.html"><i ></i> الرئيسية</a></li>
+                        <li><a href="lectures.html"><i ></i> المحاضرات</a></li>
+                        <li><a href="seminars.html"><i ></i> الندوات</a></li>
+                        <li><a href="courses.html"><i ></i> الدورات</a></li>
+                        <li><a href="about.html" class="active"><i ></i> من نحن</a></li>
+                        <li><a href="contact.html"><i ></i> اتصل بنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i></i> من نحن</h1>
+            <p>تعرف على منصة نماء ورسالتنا ورؤيتنا</p>
+            <div class="breadcrumb">
+                <a href="index.html">الرئيسية</a> / من نحن
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="content-section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                
+                <!-- المقدمة -->
+                <div style="background: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); margin-bottom: 30px;">
+                    <h2 style="color: var(--moia-green); margin-bottom: 20px; font-size: 32px;">
+                        <i class="fas fa-seedling"></i> عن منصة نماء
+                    </h2>
+                    <p style="font-size: 18px; line-height: 2; color: var(--gray); margin-bottom: 20px;">
+                        منصة <strong>نماء</strong> هي منصة إسلامية متخصصة في نشر العلوم الشرعية والمعرفة الإسلامية الأصيلة، تأسست بهدف إحياء العلم الشرعي وتقريبه للناس بأسلوب عصري وميسر.
+                    </p>
+                    <p style="font-size: 18px; line-height: 2; color: var(--gray); margin-bottom: 20px;">
+                        نسعى من خلال المحاضرات والندوات والدورات التعليمية إلى بناء جيل واعٍ بدينه، متمسك بعقيدته، فاهم لشريعته، قادر على مواجهة تحديات العصر بثبات وبصيرة.
+                    </p>
+                    <p style="font-size: 18px; line-height: 2; color: var(--gray);">
+                        اسم <strong>"نماء"</strong> يعكس رسالتنا في النمو والارتقاء بالعلم الشرعي، فالنماء في اللغة هو الزيادة والبركة، ونحن نسعى لتحقيق النماء في علم المسلم وإيمانه وعمله.
+                    </p>
+                </div>
+
+                <!-- الرؤية والرسالة -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px;">
+                    <div style="background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-top: 4px solid var(--moia-green);">
+                        <i class="fas fa-eye" style="font-size: 40px; color: var(--moia-green); margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--moia-green); margin-bottom: 15px; font-size: 24px;">رؤيتنا</h3>
+                        <p style="line-height: 1.8; color: var(--gray);">
+                            أن نكون المنصة الرائدة في نشر العلوم الشرعية بأسلوب عصري يجمع بين الأصالة والمعاصرة، ونساهم في بناء جيل واعٍ ومتمسك بدينه.
+                        </p>
+                    </div>
+                    
+                    <div style="background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-top: 4px solid var(--moia-gold);">
+                        <i class="fas fa-bullseye" style="font-size: 40px; color: var(--moia-gold); margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--moia-green); margin-bottom: 15px; font-size: 24px;">رسالتنا</h3>
+                        <p style="line-height: 1.8; color: var(--gray);">
+                            نشر العلم الشرعي الصحيح وتقريبه للناس من خلال برامج تعليمية متنوعة، مع التركيز على الجودة والمصداقية والتيسير في التعليم.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- القيم -->
+                <div style="background: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); margin-bottom: 30px;">
+                    <h2 style="color: var(--moia-green); margin-bottom: 25px; font-size: 28px; text-align: center;">
+                        <i class="fas fa-star"></i> قيمنا
+                    </h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+                        <div style="text-align: center; padding: 20px;">
+                            <i class="fas fa-book-open" style="font-size: 48px; color: var(--moia-green); margin-bottom: 15px;"></i>
+                            <h4 style="color: var(--moia-green); margin-bottom: 10px;">الأصالة</h4>
+                            <p style="color: var(--gray); font-size: 14px;">الالتزام بالعلم الشرعي الصحيح المستمد من الكتاب والسنة</p>
+                        </div>
+                        <div style="text-align: center; padding: 20px;">
+                            <i class="fas fa-check-circle" style="font-size: 48px; color: var(--moia-green); margin-bottom: 15px;"></i>
+                            <h4 style="color: var(--moia-green); margin-bottom: 10px;">الجودة</h4>
+                            <p style="color: var(--gray); font-size: 14px;">تقديم محتوى علمي عالي الجودة بإشراف نخبة من العلماء</p>
+                        </div>
+                        <div style="text-align: center; padding: 20px;">
+                            <i class="fas fa-hand-holding-heart" style="font-size: 48px; color: var(--moia-green); margin-bottom: 15px;"></i>
+                            <h4 style="color: var(--moia-green); margin-bottom: 10px;">التيسير</h4>
+                            <p style="color: var(--gray); font-size: 14px;">تقريب العلم للناس بأسلوب ميسر وواضح</p>
+                        </div>
+                        <div style="text-align: center; padding: 20px;">
+                            <i class="fas fa-lightbulb" style="font-size: 48px; color: var(--moia-green); margin-bottom: 15px;"></i>
+                            <h4 style="color: var(--moia-green); margin-bottom: 10px;">التطوير</h4>
+                            <p style="color: var(--gray); font-size: 14px;">التطوير المستمر للبرامج والمحتوى التعليمي</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الأهداف -->
+                <div style="background: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); margin-bottom: 30px;">
+                    <h2 style="color: var(--moia-green); margin-bottom: 25px; font-size: 28px;">
+                        <i class="fas fa-flag"></i> أهدافنا
+                    </h2>
+                    <div style="display: grid; gap: 20px;">
+                        <div style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: var(--light); border-radius: 8px;">
+                            <i class="fas fa-check" style="color: var(--moia-green); font-size: 20px; margin-top: 5px;"></i>
+                            <div>
+                                <h4 style="color: var(--moia-green); margin-bottom: 8px;">نشر العلم الشرعي الصحيح</h4>
+                                <p style="color: var(--gray); line-height: 1.7;">إيصال العلم الشرعي المستمد من الكتاب والسنة إلى أكبر عدد ممكن من المسلمين</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: var(--light); border-radius: 8px;">
+                            <i class="fas fa-check" style="color: var(--moia-green); font-size: 20px; margin-top: 5px;"></i>
+                            <div>
+                                <h4 style="color: var(--moia-green); margin-bottom: 8px;">تأهيل طلاب العلم</h4>
+                                <p style="color: var(--gray); line-height: 1.7;">تأهيل جيل من طلاب العلم القادرين على فهم وتطبيق الشريعة الإسلامية</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: var(--light); border-radius: 8px;">
+                            <i class="fas fa-check" style="color: var(--moia-green); font-size: 20px; margin-top: 5px;"></i>
+                            <div>
+                                <h4 style="color: var(--moia-green); margin-bottom: 8px;">معالجة القضايا المعاصرة</h4>
+                                <p style="color: var(--gray); line-height: 1.7;">تناول القضايا والمستجدات المعاصرة من منظور شرعي</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: var(--light); border-radius: 8px;">
+                            <i class="fas fa-check" style="color: var(--moia-green); font-size: 20px; margin-top: 5px;"></i>
+                            <div>
+                                <h4 style="color: var(--moia-green); margin-bottom: 8px;">بناء مجتمع علمي</h4>
+                                <p style="color: var(--gray); line-height: 1.7;">إنشاء بيئة علمية تفاعلية تجمع طلاب العلم والباحثين</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الإحصائيات -->
+                <div style="background: linear-gradient(135deg, var(--moia-green) 0%, #004d26 100%); padding: 50px 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.15); text-align: center; color: var(--white);">
+                    <h2 style="font-size: 32px; margin-bottom: 15px;">
+                        <i class="fas fa-chart-line"></i> إنجازاتنا بالأرقام
+                    </h2>
+                    <p style="margin-bottom: 40px; opacity: 0.9;">أرقام تعكس مسيرتنا في نشر العلم</p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px;">
+                        <div>
+                            <div style="font-size: 48px; font-weight: bold; color: var(--moia-gold); margin-bottom: 10px;">500+</div>
+                            <div style="font-size: 16px; opacity: 0.9;">محاضرة سنوياً</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 48px; font-weight: bold; color: var(--moia-gold); margin-bottom: 10px;">50K+</div>
+                            <div style="font-size: 16px; opacity: 0.9;">مستفيد</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 48px; font-weight: bold; color: var(--moia-gold); margin-bottom: 10px;">120+</div>
+                            <div style="font-size: 16px; opacity: 0.9;">دورة شرعية</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 48px; font-weight: bold; color: var(--moia-gold); margin-bottom: 10px;">200+</div>
+                            <div style="font-size: 16px; opacity: 0.9;">مادة تعليمية</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="content-section" style="background: var(--light);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 50px 30px; background: var(--white); border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <i class="fas fa-hands-helping" style="font-size: 60px; color: var(--moia-green); margin-bottom: 20px;"></i>
+                <h2 style="font-size: 32px; color: var(--moia-green); margin-bottom: 20px;">انضم إلينا</h2>
+                <p style="font-size: 18px; color: var(--gray); line-height: 1.8; margin-bottom: 30px;">
+                    كن جزءاً من رحلة النماء في العلم والإيمان. سجل في دوراتنا ومحاضراتنا واستفد من علم نافع وخلق حسن.
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="lectures.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 18px;">
+                        <i class="fas fa-chalkboard-teacher"></i> تصفح المحاضرات
+                    </a>
+                    <a href="courses.html" class="btn btn-secondary" style="padding: 15px 40px; font-size: 18px;">
+                        <i class="fas fa-graduation-cap"></i> اطلع على الدورات
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>عن نماء</h3>
+                    <p>منصة إسلامية متخصصة في نشر العلوم الشرعية والمعرفة الإسلامية الأصيلة من خلال المحاضرات والندوات والدورات التعليمية</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+                        <li><a href="lectures.html"><i class="fas fa-angle-left"></i> المحاضرات</a></li>
+                        <li><a href="seminars.html"><i class="fas fa-angle-left"></i> الندوات</a></li>
+                        <li><a href="courses.html"><i class="fas fa-angle-left"></i> الدورات</a></li>
+                        <li><a href="about.html"><i class="fas fa-angle-left"></i> من نحن</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-col">
+                    <h3>تواصل معنا</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                        <li><i class="fas fa-phone"></i> +966 11 123 4567</li>
+                        <li><a href="mailto:info@nemaa.sa"><i class="fas fa-envelope"></i> info@nemaa.sa</a></li>
+                        <li><i class="fas fa-clock"></i> الأحد - الخميس: 8 ص - 4 م</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 نماء - منصة العلوم الشرعية. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

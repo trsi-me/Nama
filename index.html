@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نماء - منصة العلوم الشرعية</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23006C35' width='100' height='100' rx='10'/%3E%3Cpath fill='%23C9A961' d='M30 70 Q35 50, 40 65 T50 60 T60 65 T70 70 M35 40 L40 50 L50 35 L60 50 L65 40'/%3E%3Ctext x='50' y='88' text-anchor='middle' font-size='16' fill='%23C9A961' font-weight='bold'%3Eنماء%3C/text%3E%3C/svg%3E"
+                        alt="شعار نماء" class="logo-image">
+                    <div class="logo-text">
+                        <h1>نماء</h1>
+                        <p>منصة العلوم الشرعية والتطوير المعرفي</p>
+                    </div>
+                </div>
+
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="index.html" class="active">الرئيسية</a></li>
+                        <li><a href="lectures.html">المحاضرات</a></li>
+                        <li><a href="seminars.html">الندوات</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">بسم الله الرحمن الرحيم</h2>
+            <p class="hero-subtitle">
+                منصة نماء لنشر العلوم الشرعية والمعرفة الإسلامية الأصيلة من خلال المحاضرات والندوات والدورات التعليمية
+            </p>
+            <div class="hero-quote">
+                <i class="fas fa-quote-right"></i>
+                <p>"وَمَنْ أَحْسَنُ قَوْلًا مِّمَّن دَعَا إِلَى اللَّهِ وَعَمِلَ صَالِحًا"</p>
+                <span>سورة فصلت - آية 33</span>
+            </div>
+            <div class="cta-buttons">
+                <a href="#all-events" class="btn btn-primary" onclick="scrollToEvents(event)">الكل</a>
+                <a href="lectures.html" class="btn btn-secondary">المحاضرات</a>
+                <a href="seminars.html" class="btn btn-secondary">الندوات</a>
+                <a href="courses.html" class="btn btn-secondary">الدورات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3 class="stat-number" data-target="500">0</h3>
+                    <p>محاضرة سنوياً</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3 class="stat-number" data-target="50000">0</h3>
+                    <p>مستفيد</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3 class="stat-number" data-target="120">0</h3>
+                    <p>دورة شرعية</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3 class="stat-number" data-target="200">0</h3>
+                    <p>مادة تعليمية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPCOMING EVENTS -->
+    <section class="content-section" id="all-events">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-calendar-star"></i> أحدث الفعاليات</h2>
+                <p>تعرف على آخر المحاضرات والندوات والدورات القادمة</p>
+            </div>
+
+            <div class="lectures-grid">
+                <!-- محاضرة -->
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-badge">محاضرة</span>
+                        <span class="lecture-date"><i class="fas fa-calendar"></i> 25 نوفمبر</span>
+                    </div>
+                    <h3>أحكام الزكاة في الإسلام</h3>
+                    <div class="lecture-info">
+                        <div class="lecture-info-item">
+                            <i class="fas fa-user"></i>
+                            <span>الشيخ محمد الأحمد</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>مسجد النور - الرياض</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>8:00 مساءً</span>
+                        </div>
+                    </div>
+                    <button class="btn-register" onclick="openModal('أحكام الزكاة في الإسلام', '25 نوفمبر 2024')">سجل
+                        الآن</button>
+                </div>
+
+                <!-- ندوة -->
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-badge seminar">ندوة</span>
+                        <span class="lecture-date"><i class="fas fa-calendar"></i> 15 ديسمبر</span>
+                    </div>
+                    <h3>الأسرة في ظل التربية الإسلامية</h3>
+                    <div class="lecture-info">
+                        <div class="lecture-info-item">
+                            <i class="fas fa-users"></i>
+                            <span>د. أحمد السالم وآخرون</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>مركز المؤتمرات - الرياض</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>4:00 مساءً</span>
+                        </div>
+                    </div>
+                    <button class="btn-register"
+                        onclick="openModal('ندوة الأسرة في ظل التربية الإسلامية', '15 ديسمبر 2024')">سجل الآن</button>
+                </div>
+
+                <!-- دورة -->
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-badge" style="background: #8b4513;">دورة</span>
+                        <span class="lecture-date"><i class="fas fa-calendar"></i> 05 يناير</span>
+                    </div>
+                    <h3>دورة الفقه الميسر</h3>
+                    <div class="lecture-info">
+                        <div class="lecture-info-item">
+                            <i class="fas fa-user"></i>
+                            <span>الشيخ عبدالله المنيع</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>مركز نماء - الرياض</span>
+                        </div>
+                        <div class="lecture-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 أشهر</span>
+                        </div>
+                    </div>
+                    <button class="btn-register" onclick="openModal('دورة الفقه الميسر', '05 يناير 2025')">سجل
+                        الآن</button>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="lectures.html" class="btn btn-primary">عرض جميع الفعاليات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="content-section" style="background: var(--light);">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> لماذا نماء؟</h2>
+                <p>ما يميز منصة نماء للعلوم الشرعية</p>
+            </div>
+            <div class="features-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px;">
+                <div class="feature-card"
+                    style="background: var(--white); padding: 30px; border-radius: 12px; text-align: center; transition: 0.3s; border-top: 3px solid var(--moia-green);">
+                    <i class="fas fa-users" style="font-size: 48px; color: var(--moia-green); margin-bottom: 15px;"></i>
+                    <h3 style="font-size: 20px; color: var(--moia-green); margin-bottom: 10px;">نخبة من المتخصصصين </h3>
+                    <p style="color: var(--gray); font-size: 14px; line-height: 1.6;">نخبة من أفضل المتخصصين في كل مجال
+                    </p>
+                </div>
+                <div class="feature-card"
+                    style="background: var(--white); padding: 30px; border-radius: 12px; text-align: center; transition: 0.3s; border-top: 3px solid var(--moia-green);">
+                    <i class="fas fa-comments"
+                        style="font-size: 48px; color: var(--moia-green); margin-bottom: 15px;"></i>
+                    <h3 style="font-size: 20px; color: var(--moia-green); margin-bottom: 10px;">تفاعل مباشر</h3>
+                    <p style="color: var(--gray); font-size: 14px; line-height: 1.6;">فرصة لطرح الأسئلة والمشاركة في
+                        الحوار</p>
+                </div>
+                <div class="feature-card"
+                    style="background: var(--white); padding: 30px; border-radius: 12px; text-align: center; transition: 0.3s; border-top: 3px solid var(--moia-green);">
+                    <i class="fas fa-book-open"
+                        style="font-size: 48px; color: var(--moia-green); margin-bottom: 15px;"></i>
+                    <h3 style="font-size: 20px; color: var(--moia-green); margin-bottom: 10px;">محتوى علمي قيّم</h3>
+                    <p style="color: var(--gray); font-size: 14px; line-height: 1.6;">الحصول على مواد علمية ومراجع قيمة
+                    </p>
+                </div>
+                <div class="feature-card"
+                    style="background: var(--white); padding: 30px; border-radius: 12px; text-align: center; transition: 0.3s; border-top: 3px solid var(--moia-green);">
+                    <i class="fas fa-certificate"
+                        style="font-size: 48px; color: var(--moia-green); margin-bottom: 15px;"></i>
+                    <h3 style="font-size: 20px; color: var(--moia-green); margin-bottom: 10px;">شهادات معتمدة</h3>
+                    <p style="color: var(--gray); font-size: 14px; line-height: 1.6;">شهادات حضور معتمدة من المنصة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>عن نماء</h3>
+                    <p>منصة إسلامية متخصصة في نشر العلوم الشرعية والمعرفة الإسلامية الأصيلة من خلال المحاضرات والندوات
+                        والدورات التعليمية</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+                        <li><a href="lectures.html"><i class="fas fa-angle-left"></i> المحاضرات</a></li>
+                        <li><a href="seminars.html"><i class="fas fa-angle-left"></i> الندوات</a></li>
+                        <li><a href="courses.html"><i class="fas fa-angle-left"></i> الدورات</a></li>
+                        <li><a href="about.html"><i class="fas fa-angle-left"></i> من نحن</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="footer-col">
+                    <h3>تواصل معنا</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                        <li><i class="fas fa-phone"></i> +966 11 123 4567</li>
+                        <li><a href="mailto:info@nemaa.sa"><i class="fas fa-envelope"></i> info@nemaa.sa</a></li>
+                        <li><i class="fas fa-clock"></i> الأحد - الخميس: 8 ص - 4 م</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 نماء - منصة العلوم الشرعية. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- نافذة التسجيل المنبثقة -->
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2><i class="fas fa-clipboard-check"></i> التسجيل في الفعالية</h2>
+            <p id="event-name-display" class="event-name"></p>
+            <form id="registration-form" onsubmit="return submitRegistration(event)">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> الاسم الكامل *</label>
+                    <input type="text" id="reg-name" required placeholder="أدخل اسمك الكامل">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> البريد الإلكتروني *</label>
+                    <input type="email" id="reg-email" required placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-phone"></i> رقم الجوال *</label>
+                    <input type="tel" id="reg-phone" required placeholder="05xxxxxxxx">
+                </div>
+                <input type="hidden" id="event-title" value="">
+                <input type="hidden" id="event-date" value="">
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-check"></i> تأكيد التسجيل
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">
+                        <i class="fas fa-times"></i> إلغاء
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
